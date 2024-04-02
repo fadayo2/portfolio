@@ -115,13 +115,16 @@ body {
         box-sizing: border-box;
     }
     body {
-        overflow: scroll;
+        /* overflow: scroll; */
     }
     .navbar {
-        margin-bottom: 2rem;
         align-items: center;
         justify-content: center;
     }
+    .navlinks {
+        width: var(--width);
+    }
+
     .herosection {
         display: grid;
     }
@@ -138,7 +141,7 @@ body {
         width: 90vw;
     }
     .image {
-        height: 60vh;
+        height: 45vh;
         border-radius: 10px;
     }
     .description {
