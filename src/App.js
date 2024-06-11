@@ -22,10 +22,10 @@ function App() {
        </div>
 
        <Routes>
-        <Route path='/' Component={Home}/>
-        <Route path='/projects' Component={Project}/>
-        <Route path='/about' Component={About}/>
-        <Route path='/skills' Component={Skills} />
+        <Route path='/' element={<Home />} />
+        <Route path='/projects' element={<Project />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/skills' element={<Skills />} />
        </Routes>
 
     </Router>

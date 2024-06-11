@@ -13,13 +13,18 @@
 }
 
 body {
-    overflow: hidden;
+    overflow-x: hidden;
+    background-color: rgb(219, 219, 219);
+}
+
+::-webkit-scrollbar {
+    width: 0px;
 }
 
 .navbar {
     width: var(--width);
     height: 70px;
-    border-bottom: 1px solid rgba(146, 143, 143, 0.479);
+    /* border-bottom: 1px solid rgba(146, 143, 143, 0.479); */
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -61,15 +66,21 @@ body {
     justify-content: start;
     flex-direction: column-reverse;
     gap: .5rem;
+    background-color: rgb(219, 219, 219);
 }
 
-.description  {
+.descriptionTxt  {
     width: 50vw;
     /* border: var(--border); */
     height: 30vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.descriptionTxt h1 {
     font-family: var(--fontFamily);
     font-size: calc(2.5vw + 2.5vh);
     text-align: center;
@@ -78,6 +89,18 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 0px 5px 1px rgba(0, 0, 0, 0.205);
+}
+
+.descriptionTxt .cta {
+    padding: 2.5%;
+    width: 130px;
+    font-family: var(--fontFamily);
+    font-size: 20px;
+    border: none;
+    background-color: #202020;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .image {
@@ -93,7 +116,7 @@ body {
 }
 
 .name {
-    width: 30vw;
+    width: 40vw;
     height: 10vh;
     font-family: var(--fontFamily);
     font-size: calc(1.5vw + 1.5vh);
@@ -104,8 +127,7 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 0px 3px 1px rgba(0, 0, 0, 0.205);
-    box-shadow: 0px 2px 10px 7px rgba(0, 0, 0, 0.089);
-    border-radius: 20px;
+    /* box-shadow: 0px 2px 10px 7px rgba(0, 0, 0, 0.089); */
 }
 
 @media(max-width:1024px) {
@@ -113,9 +135,6 @@ body {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-    }
-    body {
-        overflow: scroll;
     }
     .navbar {
         align-items: center;
@@ -127,24 +146,40 @@ body {
 
     .herosection {
         display: grid;
+        height: fit-content;
+        gap: 5rem;
     }
     .profile {
-        flex-direction: column;
+        /* flex-direction: column; */
         width: 100vw;
-        height: auto;
-    }
-    .profile {
+        height: fit-content;
         gap: 1rem;
-        margin-bottom: -1rem;
+        /* margin-bottom: -1rem; */
     }
     .image , .name {
-        width: 90vw;
+        width: 500px;
     }
     .image {
-        height: 45vh;
+        height: 30vh;
         border-radius: 10px;
     }
-    .description {
+    .name {
+        height: fit-content;
+        padding: 20px;
+    }
+    .descriptionTxt {
         width: 100vw;
+        height: fit-content;
+    }
+}
+
+@media(max-width: 600px) {
+    .image ,
+    .name
+    {
+        width: 80vw;
+    }
+    .name {
+        border-radius: 10px;
     }
 }
