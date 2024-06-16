@@ -154,10 +154,8 @@ button:hover {
 @media(max-width:1024px) {
     .navbar {
         width: 80vw;
-        border: 1px solid;
     }
     .herosection {
-        border: 1px solid white;
         width: 80vw;
     }
 }
