@@ -552,11 +552,12 @@ button:hover {
     .skills .heading hr {
         width: 80%;
     }
-    .skills .pattern {
-        width: inherit;
+    .pattern {
+        width: 90vw;
+        overflow: hidden;
     }
     .sk_div {
-        width: 95vw;
+        width: 90vw;
     }
     .sk_div .s_d {
         width: fit-content;
