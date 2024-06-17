@@ -1,7 +1,8 @@
-import React from 'react'
+import React from 'react';
 import { motion } from 'framer-motion';
 import heroImg from './img/heroImg.png';
-import carbnb from './img/carbnb.png'
+import carbnb from './img/carbnb.png';
+import abtImg from './img/abtImg.png';
 
 
 const Home = () => {
@@ -134,7 +135,7 @@ return (
                   <p>CSS</p>
                 </div>
               </div>
-              
+
               <div className='s_d'>
                 <header><h3>Frameworks</h3></header>
                 <div className='l_d'>
@@ -157,6 +158,26 @@ return (
                 </div>
               </div>
 
+            </div>
+          </div>
+        </div>
+
+        <div className='projects abt-me'>
+          <div className='heading'>
+            <div>
+              <h1><span>#</span>about-me</h1> &nbsp;
+              <hr/>
+            </div>
+          </div>
+          <div className='abt-div'>
+            <div className='abt-txt'>
+              <p>
+              Hi, I'm Marvellous, <br/><br/> I'm a front-end developer based in Ibadan, Nigeria. I've dedicated over a year to crafting responsive websites from scratch, focusing on delivering modern and user-friendly web experiences. I'm passionate about turning creativity and expertise into impactful online solutions, helping clients establish their digital presence effectively. <br/><br/>  In addition to web development, I serve as a web instructor, sharing my knowledge to empower  others in this dynamic field. I'm committed to continuous learning and staying updated with the  latest technologies and frameworks to deliver innovative solutions that meet current industry  standards.
+              </p>
+              <button>Read more -&#62;</button>
+            </div>
+            <div className='abt-img'>
+              <img src={abtImg}/>
             </div>
           </div>
         </div>

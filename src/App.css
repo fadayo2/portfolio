@@ -381,7 +381,7 @@ button:hover {
     align-items: center;
     justify-content: space-between;
     margin-top: 0;
-    padding-right: 13rem;
+    /* padding-right: 13rem; */
 }
 
 .pattern {
@@ -433,6 +433,62 @@ button:hover {
     font-size: 14px;
     margin: .2rem;
 }
+
+.abt-me {
+    margin-top: 10rem;
+}
+
+.abt-me .heading {
+    margin-bottom: 2rem;
+}
+
+.abt-me .heading div {
+    /* border: 1px solid red; */
+    width: 43vw;
+}
+
+.abt-me .heading hr {
+    width: 74%;
+}
+
+.abt-div {
+    width: inherit;
+    height: fit-content;
+    /* border: 1px solid white; */
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.abt-txt {
+    width: 550px;
+    height: fit-content;
+    /* border: 1px solid green; */
+}
+
+.abt-txt p{
+    color: var(--gray);
+    font-size: 16px;
+    line-height: 1.6rem;
+}
+
+.abt-txt button {
+    width: 148px;
+    height: 37px;
+    background: none;
+    border: 1px solid var(--primary);
+    color: var(--white);
+    font-family: var(--fontFamily);
+    cursor: pointer;
+    transition: .3s;
+    margin-top: 2rem;
+}
+
+.abt-txt button:hover {
+    background-color: var(--primary);
+}
+
+
 
 @media(max-width:1024px) {
     .navbar {
@@ -561,5 +617,36 @@ button:hover {
     }
     .sk_div .s_d {
         width: fit-content;
+    }
+    .abt-me {
+        margin-top: 17rem;
+    }
+    .abt-me .heading {
+        width: 92vw;
+    }
+    .abt-me .heading div{
+        width: inherit;
+    }
+
+    .abt-me .heading hr {
+        width: 54%;
+    }
+
+    .abt-div {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .abt-div .abt-txt {
+        width: 90vw;
+    }
+    .abt-img {
+        width: 90vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .abt-img img {
+        width: 60%;
     }
 }
