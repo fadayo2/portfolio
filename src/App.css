@@ -3,8 +3,9 @@
 :root {
     --fontFamily : "Fira Code", monospace;
     --primary: #C778DD;
-    --white: #ffffff;
+    --white: #000000;
     --gray: #ABB2BF;
+    --black: black;
 }
 
 * , body {
@@ -15,6 +16,7 @@
 
 body {
     background-color: #282C33;
+    background-color: whitesmoke;
     font-family: var(--fontFamily);
 }
 
@@ -41,10 +43,14 @@ span {
     align-items: center;
     justify-content: space-between;
     width: fit-content;
-    color: var(--white);
+    /* color: var(--white); */
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
+}
+
+.logo p {
+    color: black;
 }
 
 .navlinks {
@@ -108,7 +114,7 @@ span {
 
 .heroTxt p {
     font-size: 14px;
-    color: var(--gray);
+    color: var(--black);
     width: 420px;
 }
 
@@ -173,7 +179,14 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+}
+
+.quote p {
+    color: #000000;
+}
+
+.quoteQ p {
+    color: #000000;
 }
 
 .qq .quoteQ {
@@ -181,7 +194,6 @@ button:hover {
     padding: 15px;
     position: absolute;
     right: 0;
-    color: white;
 }
 
 .qu_s {
@@ -222,7 +234,7 @@ button:hover {
 }
 
 .projects .heading h1 {
-    color: white;
+    color: black;
     font-size: 25px;
     font-weight: 600;
 }
@@ -298,7 +310,7 @@ button:hover {
 .lang p {
     margin: 5px;
     font-size: 15px;
-    color: var(--gray);
+    color: var(--black);
 }
 
 .p_des {
@@ -319,7 +331,7 @@ button:hover {
 }
 
 .p_des p {
-    color: var(--gray);
+    color: var(--black);
     font-size: 14px;
 }
 
@@ -429,7 +441,7 @@ button:hover {
 }
 
 .l_d p {
-    color: var(--gray);
+    color: var(--black);
     font-size: 14px;
     margin: .2rem;
 }
@@ -468,7 +480,7 @@ button:hover {
 }
 
 .abt-txt p{
-    color: var(--gray);
+    color: var(--black);
     font-size: 16px;
     line-height: 1.6rem;
 }
@@ -528,7 +540,7 @@ button:hover {
 }
 
 .contact-div h3 {
-    color: white;
+    color: black;
     font-size: 16px;
     font-weight: 500;
 }
@@ -536,7 +548,7 @@ button:hover {
 .contact-div p {
     display: flex;
     align-items: center;
-    color: var(--gray);
+    color: var(--black);
     font-size: 14px;
 }
 
@@ -547,7 +559,7 @@ button:hover {
 }
 
 footer {
-    margin-top: 26rem;
+    margin-top: 20rem;
     border-top: 1px solid var(--gray);
     height: 200px;
     display: flex;
@@ -569,18 +581,18 @@ footer .f_1 {
 }
 
 .f_1 .gm {
-    color: var(--gray);
+    color: var(--black);
 }
 
 .f_1 div,p {
     margin-right: 10px;
-    color: white;
+    color: black;
 }
 
 .f_2 {
     width: fit-content;
     height: fit-content;
-    color: white;
+    color: black;
 }
 
 .f_2 h3 {
