@@ -2,11 +2,15 @@ import './App.css';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Home from './components/Home';
 import Project from './components/Project';
-import Skills from './components/Skills';
+import Skills from './components/contact';
 import About from './components/About';
 import { motion } from 'framer-motion';
+import { Slant as Hamburger } from 'hamburger-react';
+import { useState } from 'react';
+import Sidebar from './components/Sidebar';
 
 function App() {
+    const [isOpen, setOpen] = useState(false);
   return (
     <Router>
       <div className="App">
@@ -21,9 +25,14 @@ function App() {
             <motion.div initial={{ opacity: 1 }} whileHover={{ scale: 0.89 }} transition={{ ease: 'linear', type: 'spring', stiffness: 1000, duration: .5 }}><Link style={{color:'var(--white)' , textDecoration:'none'}} to="/"><span style={{color: 'var(--primary)'}}>#</span>home</Link></motion.div>
             <motion.div initial={{ opacity: 1 }} whileHover={{ scale: 0.89 }} transition={{ ease: 'linear', type: 'spring', stiffness: 1000, duration: .5 }}><Link style={{color:'var(--white)' , textDecoration:'none'}} to="/projects"><span style={{color: 'var(--primary)'}}>#</span>projects</Link></motion.div>
             <motion.div initial={{ opacity: 1 }} whileHover={{ scale: 0.89 }} transition={{ ease: 'linear', type: 'spring', stiffness: 1000, duration: .5 }}><Link style={{color:'var(--white)' , textDecoration:'none'}} to="/about"><span style={{color: 'var(--primary)'}}>#</span>about-me</Link></motion.div>
-            <motion.div initial={{ opacity: 1 }} whileHover={{ scale: 0.89 }} transition={{ ease: 'linear', type: 'spring', stiffness: 1000, duration: .5 }}><Link style={{color:'var(--white)' , textDecoration:'none'}} to="/skills"><span style={{color: 'var(--primary)'}}>#</span>contacts</Link></motion.div>
+            <motion.div initial={{ opacity: 1 }} whileHover={{ scale: 0.89 }} transition={{ ease: 'linear', type: 'spring', stiffness: 1000, duration: .5 }}><Link style={{color:'var(--white)' , textDecoration:'none'}} to="/contact"><span style={{color: 'var(--primary)'}}>#</span>contacts</Link></motion.div>
           </div>
-          <svg className='burger' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect y="5" width="24" height="2" fill="#D9D9D9"/><rect x="9" y="12" width="15" height="2" fill="#D9D9D9"/></svg>
+          
+          <div className='burger'>
+            <Hamburger hideOutline={false} size={20} toggled={isOpen} toggle={setOpen} /> 
+          </div>
+
+          <Sidebar isOpen={isOpen} />
 
         </nav>      
       </div>
@@ -43,7 +52,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/projects' element={<Project />} />
         <Route path='/about' element={<About />} />
-        <Route path='/skills' element={<Skills />} />
+        <Route path='/contact' element={<Skills />} />
       </Routes>
     </Router>
   );

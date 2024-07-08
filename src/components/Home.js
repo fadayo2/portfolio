@@ -172,7 +172,7 @@ return (
           <div className='abt-div'>
             <div className='abt-txt'>
               <p>
-              Hi, I'm Marvellous, <br/><br/> I'm a front-end developer based in Ibadan, Nigeria. I've dedicated over a year to crafting responsive websites from scratch, focusing on delivering modern and user-friendly web experiences. I'm passionate about turning creativity and expertise into impactful online solutions, helping clients establish their digital presence effectively. <br/><br/>  In addition to web development, I serve as a web instructor, sharing my knowledge to empower  others in this dynamic field. I'm committed to continuous learning and staying updated with the  latest technologies and frameworks to deliver innovative solutions that meet current industry  standards.
+                Hi, I'm Marvellous, <br/><br/> I'm a front-end developer based in Ibadan, Nigeria. I've dedicated over a year to crafting responsive websites from scratch, focusing on delivering modern and user-friendly web experiences. I'm passionate about turning creativity and expertise into impactful online solutions, helping clients establish their digital presence effectively. <br/><br/>  In addition to web development, I serve as a web instructor, sharing my knowledge to empower  others in this dynamic field. I'm committed to continuous learning and staying updated with the  latest technologies and frameworks to deliver innovative solutions that meet current industry  standards.
               </p>
               <button>Read more -&#62;</button>
             </div>

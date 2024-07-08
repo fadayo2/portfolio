@@ -1,120 +1,30 @@
+import React from 'react'
 import { motion } from 'framer-motion';
-import '../components/project.css';
-import carbnb from './img/carbnb.png';
 
-const Project = () => {
-
+const Skills = () => {
   return (
-      <div>
-      <section className='projectHerosection'>
-        <header className='projectHeading'>
-          <h1><span>/</span>projects</h1>
-          <p>List of my projects</p>
-        </header>
-        <div className='projects pprojects'>
+    <div>
+      <div className='projects contact bb'>
           <div className='heading'>
             <div>
-              <h1><span>#</span>complete-projects</h1>
+              <h1><span>/</span>contacts</h1> &nbsp;
+              {/* <hr/> */}
             </div>
           </div>
-          <div className='project_div'>
-            <div className='p_d'>
-              <div className='img'>
-                <img src={carbnb}/>
-              </div>
-              <div className='lang'>
-                <p>HTML</p>
-                <p>CSS</p>
-                <p>Javascript</p>
-                <p>Bootstrap</p>
-                <p>Jquery</p>
-              </div>
-              <div className='p_des'>
-                <h2>Carbnb</h2>
-                <p>A carbnb redesign</p>
-                <div> 
-                  <button>Live &#60;~&#62;</button>
-                  <button>Github &#62;=</button>
-                </div>
-              </div>
+          <div className='abt-div'>
+            <div className='abt-txt'>
+              <p>
+                I’m interested in freelance opportunities. However, if you have other request or question, don’t hesitate to contact me
+              </p>
             </div>
-            <div className='p_d'>
-              <div className='img'>
-                <img src={carbnb}/>
-              </div>
-              <div className='lang'>
-                <p>HTML</p>
-                <p>CSS</p>
-                <p>Javascript</p>
-              </div>
-              <div className='p_des'>
-                <h2>Carbnb</h2>
-                <p>A carbnb redesign</p>
-                <div> 
-                  <button>Live &#60;~&#62;</button>
-                  <button>Github &#62;=</button>
-                </div>
-              </div>
-            </div>
-            <div className='p_d'>
-              <div className='img'>
-                <img src={carbnb}/>
-              </div>
-              <div className='lang'>
-                <p>HTML</p>
-                <p>CSS</p>
-                <p>Javascript</p>
-              </div>
-              <div className='p_des'>
-                <h2>Carbnb</h2>
-                <p>A carbnb redesign</p>
-                <div> 
-                  <button>Live &#60;~&#62;</button>
-                  <button>Github &#62;=</button>
-                </div>
-              </div>
-            </div>
-            <div className='p_d'>
-              <div className='img'>
-                <img src={carbnb}/>
-              </div>
-              <div className='lang'>
-                <p>HTML</p>
-                <p>CSS</p>
-                <p>Javascript</p>
-              </div>
-              <div className='p_des'>
-                <h2>Carbnb</h2>
-                <p>A carbnb redesign</p>
-                <div> 
-                  <button>Live &#60;~&#62;</button>
-                  <button>Github &#62;=</button>
-                </div>
-              </div>
-            </div>
-            <div className='p_d'>
-              <div className='img'>
-                <img src={carbnb}/>
-              </div>
-              <div className='lang'>
-                <p>HTML</p>
-                <p>CSS</p>
-                <p>Javascript</p>
-              </div>
-              <div className='p_des'>
-                <h2>Carbnb</h2>
-                <p>A carbnb redesign</p>
-                <div> 
-                  <button>Live &#60;~&#62;</button>
-                  <button>Github &#62;=</button>
-                </div>
-              </div>
+            <div className='contact-div'>
+              <h3>Message me here</h3> <br/>
+              <p> <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.07187 9.20292C5.2168 8.57709 5.57307 8.01832 6.08232 7.6181C6.59158 7.21789 7.22365 6.99996 7.875 7H25.125C25.7764 6.99996 26.4084 7.21789 26.9177 7.6181C27.4269 8.01832 27.7832 8.57709 27.9281 9.20292L16.5 16.0865L5.07187 9.20292ZM5 10.8207V20.8847L13.3418 15.8442L5 10.8207ZM14.7189 16.6758L5.27456 22.3807C5.50791 22.8657 5.87619 23.2753 6.33656 23.5619C6.79693 23.8486 7.33044 24.0005 7.875 24H25.125C25.6695 24.0001 26.2028 23.8479 26.6629 23.561C27.123 23.274 27.491 22.8643 27.724 22.3793L18.2796 16.6744L16.5 17.7468L14.7189 16.6744V16.6758ZM19.6582 15.8457L28 20.8847V10.8207L19.6582 15.8442V15.8457Z" fill="#ABB2BF"/></svg> fadunmiyemarvellous@gmail.com</p>
             </div>
           </div>
+          {/* <svg className='dot2' width="52" height="103" viewBox="0 0 52 103" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="0.5" cy="2" r="2" fill="#ABB2BF"/><circle cx="25.25" cy="2" r="2" fill="#ABB2BF"/><circle cx="50" cy="2" r="2" fill="#ABB2BF"/><circle cx="0.5" cy="26.75" r="2" fill="#ABB2BF"/><circle cx="25.25" cy="26.75" r="2" fill="#ABB2BF"/><circle cx="50" cy="26.75" r="2" fill="#ABB2BF"/><circle cx="0.5" cy="51.5" r="2" fill="#ABB2BF"/><circle cx="25.25" cy="51.5" r="2" fill="#ABB2BF"/><circle cx="50" cy="51.5" r="2" fill="#ABB2BF"/><circle cx="0.5" cy="76.25" r="2" fill="#ABB2BF"/><circle cx="25.25" cy="76.25" r="2" fill="#ABB2BF"/><circle cx="50" cy="76.25" r="2" fill="#ABB2BF"/><circle cx="0.5" cy="101" r="2" fill="#ABB2BF"/><circle cx="25.25" cy="101" r="2" fill="#ABB2BF"/><circle cx="50" cy="101" r="2" fill="#ABB2BF"/></svg> */}
         </div>
-      </section>   
-
-      <footer>
+        <footer>
           <div className='f_1'>
             <div className='logo'><svg width="16" height="17" viewBox="0 0 16 17" fill="black" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0.5H8V4.5H4H0V8.5V12.5V16.5H4H8V12.5H12H16V8.5V4.5V0.5H12ZM4 12.5H8V8.5H12V4.5H8V8.5H4V12.5Z" fill="black"/>
@@ -138,8 +48,8 @@ const Project = () => {
         <div className='copy'>
           © Copyright 2024. Made by Marvellous
         </div>
-      </div>
-      );
+    </div>
+  )
 }
 
-export default Project;
+export default Skills
